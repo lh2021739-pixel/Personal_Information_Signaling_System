@@ -6,7 +6,15 @@
    - 检查：在命令行输入 `git --version`
    - 如果未安装，下载：https://git-scm.com/download/win
 
-2. **确保已有 GitHub 账号**
+2. **配置 Git 用户信息**（首次使用需要）
+   ```bash
+   git config --global user.name "你的名字"
+   git config --global user.email "你的邮箱"
+   ```
+   - 或者只为当前仓库配置（去掉 `--global`）
+   - 建议使用你的 GitHub 用户名和邮箱
+
+3. **确保已有 GitHub 账号**
    - 如果没有，注册：https://github.com/signup
 
 ## 🚀 操作步骤
@@ -38,12 +46,12 @@ git status
 ### 步骤3：提交到本地仓库
 
 ```bash
-git commit -m "feat: Personal Information Signaling System - 个人信息信号系统
+git commit -m "feat: 个人信息信号系统 - 让写日报变得简单高效
 
-- 实现基于LLM的YouTube视频智能搜索
-- 支持从用户报告中自动提取维度
-- 智能主题修正建议系统
-- 桌面提醒功能
+- 提供便捷的日报/周报/月报编写工具
+- 自动从报告中提取兴趣维度
+- 智能匹配YouTube视频推荐
+- 桌面定时提醒功能，养成写日报习惯
 - 完整的文档和使用说明"
 ```
 
@@ -55,7 +63,7 @@ git commit -m "feat: Personal Information Signaling System - 个人信息信号�
 2. 点击右上角 **"+"** → **"New repository"**
 3. 填写仓库信息：
    - **Repository name**: `Personal_Information_Signaling_System`（或你喜欢的名字）
-   - **Description**: `YouTube视频搜索与维度分析系统`
+   - **Description**: `让写日报变得简单高效 - 提供便捷的日报编写工具，自动提取兴趣维度，智能推荐相关内容`
    - **Visibility**: 选择 Public（公开）或 Private（私有）
    - **不要勾选** "Initialize this repository with a README"（因为我们已经有了）
 4. 点击 **"Create repository"**
@@ -149,7 +157,7 @@ git add .
 git status  # 检查
 
 # 3. 提交
-git commit -m "feat: Personal Information Signaling System项目"
+git commit -m "feat: 个人信息信号系统 - 让写日报变得简单高效"
 
 # 4. 连接远程（替换为你的仓库地址）
 git remote add origin https://github.com/你的用户名/Personal_Information_Signaling_System.git
