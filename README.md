@@ -220,5 +220,5 @@ python manage_themes.py --remove "旧主题"
 **注意**：
 - 首次使用前，请确保已配置 `.env` 文件中的 API Key
 - `archive/` 目录包含用户个人数据，已配置在 `.gitignore` 中，不会被提交到仓库
-- 配置文件（`themes.yaml`, `channels.yaml`）包含用户自定义内容，建议根据实际情况决定是否提交
+- 配置文件请参考 `themes.yaml.example` 和 `channels.yaml.example`，复制为 `themes.yaml` 和 `channels.yaml` 后修改为你自己的配置
 
